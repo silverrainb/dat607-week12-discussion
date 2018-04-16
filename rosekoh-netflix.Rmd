@@ -1,0 +1,87 @@
+---
+output: html_document
+description: Netflix recommender system
+author: "Rose Koh"
+date: "2018/04/16"
+---
+
+<style>
+p.comment {
+background-color: #DBDBDB;
+padding: 10px;
+border: 1px solid black;
+margin-left: 25px;
+border-radius: 5px;
+font-style: italic;
+}
+</style>
+
+<div class='alert alert-info'>
+<h2 class='display-3 text-uppercase'>Netflix recommender system</h2>
+
+#### Data Acquisition and Management
+##### CUNY MSDS DATA 607
+
+### Rose Koh
+##### 2018/04/16
+
+
+<div class='clearfix'>
+</div>
+</div>
+
+
+#### Netflix Recommender System
+
+<div class="alert alert-info" role="alert">
+
+Netflix is one of the largest video on demand, paid-subscription, streaming site for movie and television series.
+
+</div>
+
+
+#### 1. Perform a scenario design analysis as described below. Consider whether it makes sense for your selected recommender system to perform scenario design twice, once for the organization and once for the organization’s customers.
+
+<div class="alert alert-info" role="alert">
+
+The target users of Netflix are paid subscribers engaging Netflix service and contents.  Netflix goal is to deliver great contents -- that is, according to target's preferences so that the audiences keep their paid-membership to continuously enjoy the service, at affordable costs with great accessibility. Netflix recommends great contents for user's preferences based on their algorithm that is accomplished with data. Presumably, the more usage is stored by users, the better the accuracy gets. Thus, if the scenario analysis is performed on each side (i.e. users and business), this could improve the recommender system performance accuracy as this would represent what would have been just an assumption from business side would have two sides inputs that would ultimately improve the recommender system.
+</br>
+</br>
+To review the concepts of matrix factorization, complementing the neighborhood approach to collaborative filtering is the matrix factorization approach. The factorization approach takes a more global view that decomposes users and movies into a set of latent factors. E.g. If Netflix knows that you like fantasy movies and that Harry potter has a strong fantasy element, then Netflix will think that you will like harry potter. Matrix factorization were found to be most accurate and popular, as evident by publications and discussions on the Netflix prize forum. 
+
+</div>
+
+
+#### 2. Attempt to reverse engineer what you can about the site, from the site interface and any available information that you can find on the Internet or elsewhere.
+
+<div class="alert alert-info" role="alert">
+
+Netflix ran Netflixprize from 2006 to 2011 (https://www.netflixprize.com/rules.html) to build world-class movie recommendation system and to beat the prediction accuracy of the initial Netflix recommender system, Cinematch, and 10% higher than the winner of the year in preceding year. This was most definitely Netflix sought for help to develop high quality of prediction algorithm in their recommender system. As a result, Netflix received 44014 valid submissions from 5169 different teams.
+</br>
+</br>
+One of the example is the grand prize of 2009 (https://www.netflixprize.com/assets/GrandPrize2009_BPC_PragmaticTheory.pdf). This solution was a blend approach of many, namely, measurement of frequency, classification, low rank matrix factorization, kNN3, Nelder-Mead Simplex Method, using RMSE as a metric. The team acknowledge that this is aimed at building a system with highest possible accuracy, thus this may not be suitable for commercial usage or ensure "good" recommendations.
+
+</div>
+
+
+#### 3. Include specific recommendations about how to improve the site’s recommendation capabilities going forward.
+
+<div class="alert alert-info" role="alert">
+
+Public competition like NetflixPrize is a great way to engage the talented data scientists to possibly create the most efficient recommender system, as the resources are not limited. However, as mentioned above, such blend of heavy models are not usable in a real world recommender system. Currently Netflix depends on users streaming history and previous rating data. While data driven recommendation system is very important, We do need to account into users' preferences. It may be easier to impress the user by not showing what they do not want to see rather than to guess what they may like in assumption. Thus, having the "not interested" option for each titles (which was available but disappeared) is my recommendation. On the second note, users do tend to get annoyed by unnecessary or useless notification that provides no value. Should there be no response rate for such notifications, it needs to be  addressed so that the customer is not bothered in the future. I would recommend that they consider broadening few more features in favor of customers.
+
+</div>
+
+#### References
+
+<div class="alert alert-info" role="alert">
+
+https://www.netflixprize.com
+https://www.netflixprize.com/assets/GrandPrize2009_BPC_PragmaticTheory.pdf
+https://www.netflixprize.com/assets/GrandPrize2009_BPC_BellKor.pdf
+http://www.commendo.at/UserFiles/commendo/File/GrandPrize2009_BigChaos.pdf
+https://pdfs.semanticscholar.org/31af/4b8793e93fd35e89569ccd663ae8777f0072.pdf
+https://cacm.acm.org/news/32450-award-winning-paper-reveals-key-to-netflix-prize/fulltext
+https://www.thrillist.com/entertainment/nation/the-netflix-prize
+
+</div>
